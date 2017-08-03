@@ -8,7 +8,7 @@ Unzip the package GFA_1.0.zip (XX MB) to a preferred folder.
 Set the current working directory to GFA in MATLAB.
 The GFA package includes the following:
 
-1. Input.xlsx
+#### Input.xlsx
 An Excel® file specifying the glycosylation network as well as the glycan measurements with the following Sheets:
 ‘Overview’: 	 Contains the overall model specifications
 ‘Stoichiometry’: Contains the glycosylation network stoichiometry formatted as in the given example
@@ -16,16 +16,17 @@ An Excel® file specifying the glycosylation network as well as the glycan measu
 ‘Titer’:		 The protein production measurements formatted as in the given example
 ‘Fractions’:	 The glycan fractions formatted as in the given example.
 
-2. GFA_v1.m
+#### GFA_v1.m
 This is the main Matlab file of GFA. It runs GFA for a given dataset of a fed-batch experiment as specified in Input.xlsx. 
 
-3. GFA_xlsxread.m
+#### GFA_xlsxread.m
 Extracts data from an EXCEL file and saves them in a form that can be used by GFA.
 
-4. GFA_main.m
+#### GFA_main.m
 Calls the GFA fixed point optimization and evaluates the GFA outputs.
-5.GFA_fixedpoint.m
+
+#### GFA_fixedpoint.m
 Solves the GFA based on a fixed point iteration.
 
-6. GFA_plots.m
+#### GFA_plots.m
 Generates plots of all GFA results.
