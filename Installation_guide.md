@@ -4,7 +4,7 @@ The MATLAB subroutines in GFA (v.1.0) have been successfully tested on MATLAB® 
 Any questions regarding GFA usage can be addressed to rudi.gunawan@chem.ethz.ch.
 
 ### Installation instruction:
-Unzip the package GFA_1.0.zip (XX MB) to a preferred folder.
+Unzip the package GFA_1.0.zip to a preferred folder.
 Set the current working directory to GFA in MATLAB.
 The GFA package includes the following:
 
