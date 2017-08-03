@@ -17,7 +17,7 @@ An Excel® file specifying the glycosylation network as well as the glycan measu
 ‘Fractions’:	 The glycan fractions formatted as in the given example.
 
 #### GFA_v1.m
-This is the main Matlab file of GFA. It runs GFA for a given dataset of a fed-batch experiment as specified in Input.xlsx. 
+Runs GFA for a given dataset of a fed-batch experiment as specified in Input.xlsx. 
 
 #### GFA_xlsxread.m
 Extracts data from an EXCEL file and saves them in a form that can be used by GFA.
