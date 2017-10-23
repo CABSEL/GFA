@@ -1,26 +1,27 @@
-# GFA version 1.0
+# GFA version 1.1
 
-The MATLAB subroutines in GFA (v.1.0) have been successfully tested on MATLAB® 2016a. Please refer to the [GFA manuscript](http://www.sciencedirect.com/science/article/pii/S1096717617300964) for more detailed information about the algorithm. 
+The MATLAB subroutines in GFA (v.1.1) have been successfully tested on MATLAB® 2016a. Please refer to the [GFA manuscript](http://www.sciencedirect.com/science/article/pii/S1096717617300964) for more detailed information about the algorithm. 
 Any questions regarding GFA usage can be addressed to rudi.gunawan@chem.ethz.ch.
 
 ### Installation instruction:
-Unzip the package GFA_1.0.zip to a preferred folder.
+Unzip the package GFA_1.1.zip to a preferred folder.
 Set the current working directory to GFA in MATLAB.
 The GFA package includes the following:
 
-#### Input.xlsx
-An Excel® file specifying the glycosylation network as well as the glycan measurements with the following Sheets:
-‘Overview’: 	 Contains the overall model specifications
-‘Stoichiometry’: Contains the glycosylation network stoichiometry formatted as in the given example
-‘VCD’:		 The viable cell density measurements formatted as in the given example
-‘Titer’:		 The protein production measurements formatted as in the given example
-‘Fractions’:	 The glycan fractions formatted as in the given example.
+#### model.mat
+Model definitions for the network given in the GFA manuscript.
 
-#### GFA_v1.m
-Runs GFA for a given dataset of a fed-batch experiment as specified in Input.xlsx. 
+#### t.mat
+Vector containing the measurement times.
 
-#### GFA_xlsxread.m
-Extracts data from an EXCEL file and saves them in a form that can be used by GFA.
+#### vmeas_PrcA.mat
+Secretion fluxes measurements of process A.
+
+#### vmeas_PrcB.mat
+Secretion fluxes measurements of process B.
+
+#### GFA_v1_1.m
+Runs GFA for either process A or B as described in the [GFA manuscript](http://www.sciencedirect.com/science/article/pii/S1096717617300964). 
 
 #### GFA_main.m
 Calls the GFA fixed point optimization and evaluates the GFA outputs.
